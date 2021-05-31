@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/styles/light.css">
+    <link id="theme-style" rel="stylesheet" href="">
+    <title>Story Title</title>
+</head>
+<body>
+
+    <nav class="navigation">
+        <div class="arrow">
+            <a href="#top"><i class="fas fa-arrow-up fa-2x"></i></a>
+        </div>
+        <div class="toggle" id="top">
+            <a href="#" onclick="openSlideMenu()"><i class="fas fa-bars fa-3x"></i></a>
+        </div>
+
+        <div class="modeselector">
+            <span>Mode</span>
+            <div data-mode="light" id="light-mode" class="theme-dot light"></div>
+            <div data-mode="dark" id="dark-mode" class="theme-dot dark"></div>
+        </div>
+
+        <div id="side-menu" class="side-menu">
+            <a href="#" onclick="closeSlideMenu()"><i class="fas fa-times  fa-3x"></i></a>
+            <a href="#summary">Summary</a>
+            <a href="#chapters">Chapters</a>
+            <ul class=subcat>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+            </ul>
+            <a href="#author">About the author</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="title">
+            <h1>Title of the Story</h1>
+            <div class="content  flex-2">
+                <div class="image">
+                    <img src="images/undraw_book_lover_mkck.svg" alt="Girl sitting on a pile of books">
+                </div>
+                <div id="summary">
+                    <h2>Summary</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam sapiente voluptate eveniet corporis quas iure quis nisi tempore earum placeat atque asperiores, autem non minima aliquam perspiciatis cumque expedita porro hic ipsam nihil aspernatur veniam delectus? Est nostrum nobis praesentium esse inventore numquam et, ab modi voluptate ipsam veritatis quibusdam totam aperiam consectetur error cupiditate eligendi laudantium quidem itaque aliquid quam impedit? Earum quo, amet fugit suscipit veritatis culpa sed enim a! Fuga numquam sed fugiat dolorem? Dignissimos, quisquam! Ipsum magni voluptas corrupti quibusdam sapiente, inventore ipsa laboriosam. Ipsum hic mollitia, atque corporis consectetur rerum quam nemo minus ipsam odit assumenda inventore, error sequi dignissimos corrupti animi sunt quisquam asperiores? Inventore, voluptates tempore officiis magnam porro vitae perspiciatis sapiente?</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="chapters">
+            <h2>Chapters</h2>
+            <img src="/images/books.svg" alt="pile of books">
+            <div class="cards">
+                <a class="card card-1" href="chapter1.html">
+                    <h3>Chapter 1</h3>
+                    <h4>Title of Chapter 1</h4>
+                </a>
+
+                <a class="card card-2" href="chapter2.html">
+                    <h3>Chapter 2</h3>
+                    <h4>Title of Chapter 2</h4>
+                </a>
+                <a class="card card-3" href="chapter3.html">
+                    <h3>Chapter 3</h3>
+                    <h4>Title of Chapter 3</h4>
+                </a>
+                <a class="card card-4" href="chapter4.html">
+                    <h3>Chapter 4</h3>
+                    <h4>Title of Chapter 4</h4>
+                </a>
+            </div>
+        </div>
+
+        <div id="author">
+            <h2>About the author</h2>
+            <div class="about flex-2"> 
+                <div class="image">
+                    <img src="images/undraw_teacher_35j2.svg" alt="Picture of XY" class="author-image">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur rem dolor, minus ducimus sunt voluptate aliquid accusantium tenetur quod earum ex culpa corporis nostrum. Iure consectetur quia adipisci quam enim quaerat earum placeat minima, eum eos possimus numquam minus nisi consequatur unde aliquam illo dolorum. Dignissimos mollitia earum eligendi possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore adipisci quaerat, nam mollitia vel consequuntur esse velit dolor quia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur natus amet veritatis modi excepturi, corporis dolorum. Esse nam fugiat ipsum facere quis eligendi architecto hic porro. Officiis fuga autem, itaque hic quidem corrupti, animi, maiores aliquam eaque exercitationem error. Delectus.</p>
+            </div>
+        </div>
+        <div class="bottom-image">
+             <img src="images/undraw_Bibliophile_hwqc.svg" alt="">
+        </div> 
+    </main>
+
+    <footer id="contact">
+        <div class="social-icons">
+            <a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+            <a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+            <a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+        </div>
+        <form>
+            <h3>Get in touch</h3>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Message"></textarea>
+            <button class="button">Send</button>
+        </form>
+        <p class="copyright">Copyright 2021 Csilla Furedi</p>
+        
+    </footer>
+
+    <script>
+        function openSlideMenu () {
+            document.getElementById('side-menu').style.width = '360px';
+            document.getElementById('main').style.paddingTop = '300px';
+           
+
+        }
+
+        function closeSlideMenu () {
+            document.getElementById('side-menu').style.width = '0px';
+            document.getElementById('main').style.paddingTop = '0px'; 
+        }
+
+       
+
+    </script>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

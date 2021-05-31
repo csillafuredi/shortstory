@@ -1,0 +1,83 @@
+:root {
+    --pinkColor: #FB4789;
+    --darkColor: #3A3768;
+    --darkerColor: #242144;
+    --lightColor: #F3F1F1;
+}
+body {
+    background-color: var(--darkColor);
+}
+
+h1 {
+    color: var(--lightColor);
+}
+
+.navigation .toggle {
+    color: var(--lightColor);
+}
+
+.navigation .arrow a {
+    color: var(--pinkColor);
+}
+
+.navigation a {
+    color: var(--lightColor);
+}
+
+.modeselector span {
+    color: var(--lightColor);
+}
+
+.modeselector .theme-dot {
+    border: 2px solid var(--lightColor);
+}
+
+.modeselector .theme-dot.light {
+    background-color: var(--lightColor);
+    height: 25px;
+    width: 25px;
+}
+
+.modeselector .theme-dot.dark {
+    background-color: var(--darkColor);
+    height: 30px;
+    width: 30px;
+}
+
+#summary {
+    background-color: var(--darkColor);
+    color:var(--lightColor);
+    border: 1px solid var(--lightColor);
+    border-radius: 20px;
+}
+
+
+#chapters h2 {
+    color: var(--lightColor);
+}
+
+
+#chapters .card {
+    background-color: var(--darkColor);
+    color:var(--lightColor);
+    border: 1px solid var(--lightColor);
+    border-radius: 20px;
+}
+
+footer {
+    background-color:var(--darkerColor);
+}
+
+.chapters {
+    color:var(--lightColor);
+}
+
+.wrapper {
+    background-color: var(--darkColor)
+}
+
+.navbuttons a i {
+    color: var(--lightColor);
+    padding: 20px;
+    margin: 10px;
+}
