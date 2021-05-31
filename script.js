@@ -3,7 +3,7 @@ let theme = localStorage.getItem('theme')
 if(theme == null){
     setTheme('light')
 }else{
-    setTheme('dark')
+    setTheme(theme)
 }
 
 let themeDots = document.getElementsByClassName('theme-dot')
